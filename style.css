@@ -1,41 +1,62 @@
 *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(49, 43, 43);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainbox{
+        height: 500px;
+        width:500px;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .maincircle{
+        height: 400px;
+        width:400px;
+        background-color: #01DCFB;
+        border-radius: 50%;
+        position: relative;
+         }
+         .circle{
+            height:190px;
+            width: 190px;
+           
+            border: 20px solid #ffffff;
+            position: absolute;
+         }
+         .c1{
+            border-radius: 50% 50% 50% 0%;
+            right:60px;
+            top:60px;
+         }
+         .c2{
+            border-radius: 50% 0% 50% 50% ;
+            top:150px;
+            right:143px;
+         }
+
+.bar{
+    height: 20px;
+    width: 100px;
+    background-color: #ffffff;
+    position: absolute;
 }
-body{
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(49, 43, 43);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.b1{
+    top: 280px;
+    left:70px;
 }
-.mainbox{
-    height: 500px;
-    width:500px;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.b2{
+    top:200px;
+    right:65px;
 }
-.maincircle{
-    height: 400px;
-    width:400px;
-    background-color: #01DCFB;
-    border-radius: 50%;
-     }
-     .circle{
-        height:200px;
-        width: 200px;
-       
-        border: 20px solid #ffffff;
-        position: absolute;
-     }
-     .c1{
-        border-radius: 50% 50% 50% 0%;
-     }
-     .c2{
-        border-radius: 50% 0% 50% 50% ;
-     }
