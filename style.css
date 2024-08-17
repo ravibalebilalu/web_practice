@@ -20,3 +20,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+.maincircle{
+    height: 400px;
+    width:400px;
+    background-color: #01DCFB;
+    border-radius: 50%;
+     }
