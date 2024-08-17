@@ -34,16 +34,33 @@
            
             border: 20px solid #ffffff;
             position: absolute;
-         }
+           
+     }
          .c1{
             border-radius: 50% 50% 50% 0%;
             right:60px;
             top:60px;
+            animation:anim1 1s linear;
          }
+        
+        @keyframes anim1{
+           50%{
+               transform: translate(50px,-40px);
+               border-radius: 50%;
+           }
+        }
+        
          .c2{
             border-radius: 50% 0% 50% 50% ;
             top:150px;
             right:143px;
+            animation:anim2 1s linear;
+         }
+         @keyframes anim2{
+            50%{
+                transform: translate(-50px,40px);
+                border-radius: 50%;
+            }
          }
 
 .bar{
@@ -51,12 +68,18 @@
     width: 100px;
     background-color: #ffffff;
     position: absolute;
+    animation:anim3 1s linear;
 }
+@keyframes anim3{
+    50%{
+        transform: rotate(360deg);
+    }
+ }
 .b1{
     top: 280px;
-    left:70px;
+    left:130px;
 }
 .b2{
     top:200px;
-    right:65px;
+    right:125px;
 }
