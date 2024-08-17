@@ -26,3 +26,16 @@ body{
     background-color: #01DCFB;
     border-radius: 50%;
      }
+     .circle{
+        height:200px;
+        width: 200px;
+       
+        border: 20px solid #ffffff;
+        position: absolute;
+     }
+     .c1{
+        border-radius: 50% 50% 50% 0%;
+     }
+     .c2{
+        border-radius: 50% 0% 50% 50% ;
+     }
