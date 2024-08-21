@@ -39,6 +39,12 @@
    right:50px;
    bottom: 45px;
    transform: rotate(-2deg);
+   animation: anim3 1s linear;
+ }
+ @keyframes anim3 {
+   0%{
+       transform: rotate(360deg);
+   }
  }
  .box{
    height: 150px;
@@ -73,6 +79,12 @@
    box-shadow: -5px -5px #136AAD;
      
    z-index: 100;
+   animation: anim1 1s linear;
+ }
+ @keyframes anim1 {
+   0%{
+       transform: rotateY(360deg);
+   }
  }
  .bar{
    height: 6px;
@@ -114,4 +126,10 @@ transform: rotate(165deg);
    bottom: 70px;
      left:150px;
    z-index: 100;
+   animation: anim2 1s linear;
+ }
+ @keyframes anim2 {
+   0%{
+       transform: rotateZ(-360deg);
+   }
  }
