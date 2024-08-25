@@ -22,67 +22,43 @@ body{
 .circle{
    height: 400px;
    width: 400px;
-   background-color: #1FB4FA;
+   background-color: #B49FFC;
    border-radius: 50%;
     display: flex;
-     justify-content: center;
+   justify-content: center;
    align-items: center;
-   position: relative;
-}
-.sv{
-   position: absolute;
-left:133px;
-top:140px;
-animation: anim1 1s linear;
-    
-}
-@keyframes anim1{
-   0%{
-      transform: rotate(100deg) scale(.0001);
-   }
-   75%{
-      transform: scale(2);
-   }
-}
-polygon{
-     
-    fill: #FFFEFE;
-    stroke-width: 30;
-    stroke-linejoin: round;
-    stroke: #FFFEFE;
-      transform: scale(.45);
-      position: absolute;
-     
 }
 .box1{
    height: 200px;
-   width: 80px;
-   background-color: #FFFEFE;
-    transform: perspective(200px) rotateY(43deg);
-   border-radius:7px;
-   position: absolute;
-   left:55px;
-   animation: anim2 1s linear;
+   width: 200px;
+   border-color: #FFFEFE;
+   border-style: solid;
+   border-width: 40px 40px 40px 0px;
+   animation: anim2 2s linear;
 }
 @keyframes anim2{
-   0%{
-      transform: scale(0.01) rotateY(360deg);
-      left:200px;
+   
+   50%{
+        
+      border-width: 50px;
+      border-radius: 50%;
+     
    }
 }
 .box2{
-   height: 200px;
-   width: 80px;
-   background-color: #FFFEFE;
-    transform: perspective(200px) rotateY(-43deg);
-   border-radius:7px;
-    position: absolute;
-   right:55px;
-   animation: anim3 1s linear;
+   height: 80px;
+   width: 120px;
+   border-color: #FFFEFE;
+   border-style: solid;
+   border-width: 0px 40px 40px 0px;
+   animation: anim1 2s linear;
 }
-@keyframes anim3{
-   0%{
-      transform: scale(0.01) rotateY(360deg);
-      right: 200px;
+@keyframes anim1{
+   
+   50%{
+      
+      transform: translate(130px,80px) scale(0);
+      border-width: 50px;
+      border-radius: 100%;
    }
 }
