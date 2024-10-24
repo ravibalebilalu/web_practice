@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 body {
     height: 100vh;
@@ -14,9 +13,91 @@ body {
 .mainbox {
     height: 400px;
     width: 400px;
-    background-color: #ffffff;
+    background-color: #feebd3;
     position: relative;
     overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
 }
 
- 
+.circlebig {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #feebd3;
+    position: absolute;
+    border: 15px solid #feebd3;
+    animation: anim1 2s linear;
+}
+@keyframes anim1 {
+    0%{
+        transform: scale(0);
+    }
+}
+
+
+.bc1 {
+    right: 185px;
+}
+.bc2 {
+    left: 185px;
+}
+
+.inner-small {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 555;
+}
+
+.is1 {
+    background-color: #fe4a49;
+}
+
+.is2 {
+    background-color: #00a6b2;
+}
+.is11 {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #fe4a49;
+    position: absolute;
+    z-index: 999;
+}
+.extra {
+    display: flex;
+    flex-direction: column;
+     animation: anim3 2s linear;
+}
+@keyframes anim3{
+    50%{
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+}
+.box {
+    height: 185px;
+    width: 190px;
+    animation: anim2 2s linear;
+}
+
+@keyframes anim2{
+    0%{
+        height: 0px;
+        width: 0px;
+        border-radius: 50%;
+    }
+}
+.b1 {
+    background-color: #00a6b2;
+   
+}
+.b2 {
+    background-color: #fe4a49;
+   
+}
