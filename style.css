@@ -14,7 +14,7 @@ body {
 .mainbox {
     height: 400px;
     width: 400px;
-    background-color: #ffffff;
+    background-color: #feebd3;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -22,4 +22,53 @@ body {
     align-items: center;
 }
 
+.circles{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    animation: anim1 2s linear;
+}
+.circle{
+    height: 150px;
+    width: 300px;
+    border-radius: 150px 150px 0 0;
+   
+}
+@keyframes anim1 {
+    0%{
+        gap: 0px;
+        transform: scale(0) rotate(360deg);
+        justify-content: center;
+         
+    }
+}
+.c1{
+    border: 55px solid #fe4a49;
+}
+.c2{
+    border:  55px solid #00a6b2;
+    transform: rotate(180deg);
+}
+
+.bar{
+    height: 55px;
+    width: 365px;
+    position: absolute;
+    animation: anim2 2s linear;
+}
+@keyframes anim2{
+    0%{
+         transform: translate(100px,100px) scale(0);
+    }
+}
+.b1{
+    background-color: #fe4a49;
+  left:18px;
+  top:134px;
+}
+.b2{
+    background-color: #00a6b2;
+  left:17px;
+  top:210px;
+}
  
