@@ -22,4 +22,52 @@ body {
     align-items: center;
 }
 
+.box1{
+    height: 300px;
+    width: 250px;
+    background-color: #fe4a49;
+    border-radius: 0px 0px 200px 200px;
+    position: absolute;
+    left: -120px;
+    top:0;
+    animation: anim1 2s linear;
+}
+@keyframes anim1{
+    0%{
+        transform:  scale(0) rotateY(360deg);
+        border-radius: 1000px;
+    }
+}
+ 
+.box2{
+    width: 400px;
+    height: 400px;
+    border: 60px solid #feebd3;
+    border-radius: 120px;
+    background-color: #feebd3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -200px;
+    top: 110px;
+    animation: anim2 2s linear;
+}
+@keyframes anim2 {
+    0%{
+        transform: scale(0);
+        border-width: 200px;
+        transform: rotate(90deg);
+    }
+}
+.box3{
+    width: 400px;
+    height: 300px;
+    border: 40px solid #00a6b2;
+     background-color: #00a6b2;
+    border-radius: 30px;
+   margin-left:30px;
+  margin-top:70px;
+  
+}
  
