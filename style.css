@@ -14,12 +14,144 @@ body {
 .mainbox {
     height: 400px;
     width: 400px;
-    background-color: #00a6b2;
+    background-color: #feebd3;
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+     
 }
+.upper ,.lower,.left,.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    position: relative;
+}
+.upper{
+    top: -10px;
+    left: -200px;
+    transform: rotate(-45deg);
+}
+.lower{
+    transform: rotateX(-145deg) rotate(130deg) scale(1.2);
+    left: 119px;
+}
+.left{
+    transform: rotate(137deg);
+    top: 64px;
+    left: 147px;
+}
+.right{
+    transform: rotateY(197deg) rotate(-226deg);
+    top: 58px;
+    left: -158px;
+}
+  .upper .ub1{
+    width: 200px;
+    height: 50px;
+    background-color: #fe4a49;
+    clip-path: polygon(0 41%, 97% 41%, 85% 84%, 0 84%);
+    position: absolute;
+  }
 
- 
+  .upper .ub2{
+    width: 172px;
+    height: 50px;
+    background-color:#00a6b2;
+    clip-path: polygon(0 41%, 100% 41%, 85% 84%, 0 84%);
+    position: absolute;
+    top: 21px;
+  }
+  .upper .ub3{
+    width: 148px;
+    height: 50px;
+    background-color:#fe4a49;
+    clip-path: polygon(0 41%, 100% 41%, 85% 84%, 0 84%);
+    position: absolute;
+    top: 41px;
+  }
+
+  .lower .lb1{
+    width: 200px;
+    height: 50px;
+    background-color: #fe4a49;
+    clip-path: polygon(0 41%, 97% 41%, 85% 84%, 0 84%);
+    position: absolute;
+  }
+
+  .lower .lb2{
+    width: 172px;
+    height: 50px;
+    background-color:#00a6b2;
+    clip-path: polygon(0 41%, 100% 41%, 85% 84%, 0 84%);
+    position: absolute;
+    top: 21px;
+  }
+  .lower .lb3{
+    width: 148px;
+    height: 50px;
+    background-color:#fe4a49;
+    clip-path: polygon(0 41%, 100% 41%, 85% 84%, 0 84%);
+    position: absolute;
+    top: 41px;
+  }
+
+
+  .left .ub1{
+    width: 200px;
+    height: 50px;
+    background-color: #fe4a49;
+    clip-path: polygon(0 41%, 97% 41%, 85% 84%, 0 84%);
+    position: absolute;
+  }
+
+  .left .ub2{
+    width: 172px;
+    height: 50px;
+    background-color:#00a6b2;
+    clip-path: polygon(0 41%, 100% 41%, 85% 84%, 0 84%);
+    position: absolute;
+    top: 21px;
+  }
+  .left .ub3{
+    width: 148px;
+    height: 50px;
+    background-color:#fe4a49;
+    clip-path: polygon(0 41%, 100% 41%, 85% 84%, 0 84%);
+    position: absolute;
+    top: 41px;
+  }
+
+  .right .lb1{
+    width: 200px;
+    height: 50px;
+    background-color: #fe4a49;
+    clip-path: polygon(0 41%, 97% 41%, 85% 84%, 0 84%);
+    position: absolute;
+  }
+
+  .right .lb2{
+    width: 172px;
+    height: 50px;
+    background-color:#00a6b2;
+    clip-path: polygon(0 41%, 100% 41%, 85% 84%, 0 84%);
+    position: absolute;
+    top: 21px;
+  }
+  .right .lb3{
+    width: 148px;
+    height: 50px;
+    background-color:#fe4a49;
+    clip-path: polygon(0 41%, 100% 41%, 85% 84%, 0 84%);
+    position: absolute;
+    top: 41px;
+  }
+
+  h5{
+    font-size: 50px;
+    color: rgba(34, 17, 186, 0.869);
+    position: absolute;
+    top: 0;
+  }
