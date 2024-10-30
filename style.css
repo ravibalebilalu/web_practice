@@ -14,12 +14,61 @@ body {
 .mainbox {
     height: 400px;
     width: 400px;
-    background-color: #00a6b2;
+    background-color: #ffa09a;
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+     
 }
 
- 
+.triangle1{
+    height: 400px;
+    width: 400px;
+    background-color: #feebd3;
+    clip-path: polygon(50% 0%, 0% 100%, 50% 50%);
+    position: absolute;
+    animation: anim2 2s linear;
+}
+@keyframes anim1{
+50%{
+    clip-path: polygon(50% 0%, 50% 100%, 50% 50%);
+}
+}
+.triangle2{
+    height: 400px;
+    width: 400px;
+    background-color: #fe4a49;
+    clip-path: polygon(50% 0%, 0% 100%, 50% 50%);
+    position: absolute;
+    transform: rotateY(180deg);
+    animation: anim2 2s linear;
+}
+@keyframes anim2{
+    0%{
+        clip-path: polygon(50% 0%, 50% 100%, 50% 50%);
+    }
+}
+.triangle3{
+    height: 200px;
+    width: 400px;
+    background-color: #00a6b2;
+    clip-path: polygon(50% 0%, 0% 100%, 50% 35%);
+    position: absolute;
+     bottom: 0;
+     animation: anim1 2s linear;
+    
+}
+.triangle4{
+    height: 200px;
+    width: 400px;
+    background-color: #feebd3;
+    clip-path: polygon(50% 0%, 0% 100%, 50% 35%);
+    position: absolute;
+     bottom: 0;
+     transform: rotateY(180deg);
+     animation: anim1 2s linear;
+}
+
