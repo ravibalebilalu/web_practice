@@ -14,12 +14,80 @@ body {
 .mainbox {
     height: 400px;
     width: 400px;
-    background-color: #00a6b2;
+    background-color:#feebd3;
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.secondrow{
+  display: flex;
+  position: relative;
+ 
+}
+  .box{
+    height: 130px;
+    width: 130px;
+   overflow: hidden;
+    position: relative;
+   animation: anim1 2s ease;
+    
+  }
+
+  @keyframes anim1 {
+    50%{
+      transform: rotate(360deg) scale(0);
+    }
+  }
+
+.box1,.box2,.box4,.box5{
+  background-color: #00a6b2;
+   
+     
 }
 
- 
+
+  .box3{
+    background-color: #fe4a49;
+     
+  }
+  
+
+
+  
+  .circle{
+    height: 505px;
+    width: 505px;
+    background-color:#feebd3;
+    border-radius: 50%;
+    position: absolute;
+  
+   
+  }
+  .c11 {
+    left: 118px;
+    top: -187px;
+    
+  }
+  .c12 {
+    left:-495px;
+    top: -187px;
+  
+     
+  }
+  .c13 {
+    left: -192px;
+    top: -495px;
+    
+     
+  }
+  .c14 {
+    left: -192px;
+    top: 119px;
+   
+      
+     
+  }
+
