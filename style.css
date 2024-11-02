@@ -14,7 +14,7 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color: #fe4a49;
+  background-color:#ffa09a;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -22,3 +22,95 @@ body {
   align-items: center;
 }
  
+ 
+.circle1{
+  height: 330px;
+  width: 330px;
+  border-radius: 300px;
+  border: 26px solid #00a6b2;
+  border-bottom: 20px solid #ffa09a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(50deg);
+  animation: anim1 2s ease-in-out;
+}
+@keyframes anim1{
+  0%{
+    transform: rotate(360deg);
+    border: 0px solid #ffa09a;
+  }
+}
+
+.circle2{
+  height: 250px;
+  width: 250px;
+  border-radius: 300px;
+  border: 26px solid #fe4a49;
+  border-bottom: 20px solid #ffa09a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(175deg);
+  animation: anim1 2s ease-in-out;
+}
+ 
+.circle3{
+  height: 150px;
+  width: 150px;
+  border-radius: 300px;
+  border: 26px solid #000000;
+  border-bottom: 20px solid #ffa09a;
+  transform: rotate(170deg);
+  animation: anim1 2s ease-in-out;
+}
+
+
+.ball{
+  height: 22px;
+  width: 22px;
+  border-radius: 50px;
+  position: absolute;
+  animation: anim2 2s ease-in-out;
+}
+@keyframes anim2{
+  0%{
+    transform: scale(0);
+  }
+}
+.blueball{
+  background-color: #00a6b2;
+}
+
+.redball{
+  background-color: #fe4a49;
+}
+
+.blackball{
+background-color: #000000;
+}
+
+.bb1{
+  top: 184px;
+  left: 35px;
+}
+.bb2{
+  top: 341px;
+  left: 165px;
+}
+ .br1{
+  top: 78px;
+  left:194px;
+ }
+ .br2{
+  top: 183px;
+  left: 300px;
+ }
+ .bbl1{
+  top: 202px;
+  left: 127px;
+ }
+ .bbl2{
+  top: 252px;
+  left: 195px;
+ }
