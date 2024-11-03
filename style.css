@@ -14,11 +14,23 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color: #fe4a49;
+  background-color: #ffa09a;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
- 
+ .circle1, .circle2{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+   border: 5px solid #fff;
+   border-top:  #ffa09a;
+  
+   
+ }
+ .circle2{
+   
+  
+ }
