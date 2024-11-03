@@ -22,15 +22,50 @@ body {
   align-items: center;
 }
  .circle1, .circle2{
-  height: 200px;
-  width: 200px;
+  height:300px;
+  width: 300px;
   border-radius: 50%;
-   border: 5px solid #fff;
-   border-top:  #ffa09a;
-  
+   border: 10px solid #fff;
+   border-top:5px solid   #ffa09a;
+   border-left:5px solid   #ffa09a;
+   border-right:5px solid   #ffa09a;
+  position: absolute;
+    
    
  }
- .circle2{
-   
+
+ 
+ .circle1{
+  top: -91px;
   
+ }
+ .circle2{
+     
+   transform: rotate(180deg);
+   top: 83px;
+  
+ }
+
+  
+ .petal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+ }
+ .p1{
+  transform:  rotateX(63deg) rotateY(-1deg);
+  transform-origin: center top;
+  top: 100px;
+ }
+
+ .p2{
+  transform:  rotateX(63deg) rotateY(-1deg);
+  transform-origin: center top;
+  top: 100px;
+ }
+  
+ h1{
+  font-size: 50px;
+   color: red;
  }
