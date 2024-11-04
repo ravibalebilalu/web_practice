@@ -14,11 +14,18 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color: #fe4a49;
+  background-color:#FFAB38;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+ 
+.circle{
+  height: 400px;
+  width: 400px;
+  border:80px solid rgb(10, 7, 31);
+  border-radius: 50%;
 }
  
