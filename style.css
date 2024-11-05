@@ -14,11 +14,142 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color: #fe4a49;
+  background: #1b1b1b;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
- 
+.pair{
+  display: flex;
+   
+  justify-content: center;
+  align-items: center;
+}
+.bar{
+  height: 20px;
+  width: 50px;
+  background-color: #dcd8c6;
+}
+.circle{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #dcd8c6;
+}
+.c1{
+  margin-right: -10px;
+}
+
+.c2{
+  margin-left: -10px;
+}
+.black{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+   gap: 10px;
+}
+.b1{
+  height: 35px;
+  width: 34px;
+  border-radius: 0px 0px 11px 11px;
+  background: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.b2{
+  height: 35px;
+  width: 34px;
+  border-radius:  11px 11px 0px 0px;
+  background: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.miinicircle{
+  height: 25px;
+  width: 31px;
+  border-radius:  50%;
+  background: #1b1b1b;
+  position: absolute;
+  
+}
+.mc1{
+  top: 13px;
+}
+.mc2{
+  bottom: 13px;
+}
+
+.mnc{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.upperpair{
+  position: absolute;
+  top: 15px;
+  left: 150px;
+}
+.middlepair{
+  transform: rotate(90deg);
+  position: absolute;
+  top: 79px;
+  animation: anim4 2s ease;
+}
+@keyframes anim4{
+  0%{
+    transform: rotate(380deg);
+  }
+}
+
+.leftpair{
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 73px;
+  left: -56px;
+  animation: anim3 2s ease;
+}
+@keyframes anim3{
+  0%{
+    transform: rotate(380deg);
+  }
+}
+
+.rightpair .c1,.rightpair .c2,.rightpair .bar{
+background-color: #ff2401;
+}
+.bottompair .c1, .bottompair .c2,.bottompair .bar{
+  background-color: #ff2401;
+}
+.rightpair ,.bottompair{
+  position: absolute;
+}
+.rightpair{
+  left: 159px;
+  top: 286px;
+  animation: anim1 2s ease;
+}
+@keyframes anim1{
+  0%{
+    transform: rotate(380deg);
+  }
+}
+
+.bottompair{
+  transform: rotate(90deg);
+  position: absolute;
+  left: 224px;
+  bottom: 79px;
+  animation: anim2 2s ease;
+}
+@keyframes anim2{
+  0%{
+    transform: rotate(380deg);
+  }
+}
