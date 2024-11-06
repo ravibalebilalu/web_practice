@@ -14,11 +14,52 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color: #fe4a49;
+  background-color: #1b1b1b;
   position: relative;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.upper,.middle,.lower{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  height: 111px;
+  width: 111px;
+  background-color: #ff2401;
+  animation: anim1 2s ease-in;
+}
+@keyframes anim1{
+  50%{transform: scale(0);}
+}
+.triangle{
+  height: 110px;
+  width: 110px;
+  background-color:#ff2401 ;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+ 
+}
+.t1,.t2,.t3,.t4{
+  animation: anim2 2s ease-in-out;
+}
+@keyframes anim2{
+  50%{
+    transform: rotate(360deg) scale(0);
+  }
+}
+.middle .triangle:nth-child(1){
+  transform: rotate(-90deg);
+}
+.middle .triangle:nth-child(3){
+  transform: rotate(90deg);
+}
+
+.lower .triangle{
+  transform: rotate(180deg);
 }
  
