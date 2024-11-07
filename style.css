@@ -14,11 +14,57 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color: #fe4a49;
+  background-color:#1b1b1b;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: #dcd8c6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: anim2 2s ease;
+}
+@keyframes anim2{
+  0%{
+    transform: scale(0);
+  }
+}
+.circle{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #1b1b1b;
+}
+
+.triangle{
+  height: 200px;
+  width: 200px;
+  background-color: #dcd8c6;
+  clip-path: polygon(1% 1%, 0% 100%, 100% 100%);
+  animation: anim1 2s linear;
+}
  
+@keyframes anim1{
+  0%{
+    height: 300px;
+    width: 300px;
+  }
+}
+.t1{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.t2{
+  transform: rotate(180deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
