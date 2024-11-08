@@ -14,11 +14,50 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color: #fe4a49;
+  background-color:#dcd8c6;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
- 
+
+.outerbox{
+  height: 300px;
+  width: 300px;
+  background-color: #1b1b1b;
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+ overflow: hidden;
+}
+
+.innerbox{
+  height: 300px;
+  width: 300px;
+   background-color: #dcd8c6;
+   border-radius: 40px;
+   position: absolute;
+   top: 33px;
+   left: 33px;
+   animation: anim1 2s ease-in-out;
+}
+@keyframes anim1{
+  0%{
+    background-color: black;
+    opacity: 0;
+    transform: scale(0);
+     
+  }
+}
+ .b1{
+  top:180px;
+  left: 180px;
+ }
+ .b2{
+  transform: rotate(180deg);
+  top: -80px;
+  left: -80px;
+ }
