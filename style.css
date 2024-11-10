@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  
 }
 body {
   height: 100vh;
@@ -14,11 +14,103 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color: #fe4a49;
+  background-color: #1b1b1b;
   position: relative;
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+}
+.topleft{
+  max-width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.box{
+  height: 33.3px;
+  width: 33.3px;
+  animation:anim1 1s ease-out;
+}
+@keyframes anim1{
+  0%{
+    width: 500px;
+    height: 500px;
+  }
+}
+.first-row ,.second-row ,.third-row,.fourth-row,.fifth-row,.sixth-row{
+  display: flex;
+}
+.first-row .box:nth-child(even){
+  background-color:   #dcd8c6;;
+}
+.second-row .box:nth-child(odd){
+  background-color:   #dcd8c6;;
+}
+.third-row .box:nth-child(even){
+  background-color:   #dcd8c6;;
 }
  
+.fourth-row .box:nth-child(odd){
+  background-color:   #dcd8c6;;
+}
+
+.fifth-row .box:nth-child(even){
+  background-color:   #dcd8c6;;
+}
+ 
+.sixth-row .box:nth-child(odd){
+  background-color:   #dcd8c6;;
+}
+
+.topright ,.bottomleft {
+  width: 200px;
+  height: 200px;
+  background-color: #dcd8c6;
+  overflow: hidden;
+  position: relative;
+}
+
+.circle{
+  height: 400px;
+  width: 400px;
+  background-color: #ff2401;
+  border-radius: 50%;
+  position: absolute;
+animation: anim2 2s ease-in-out;
+}
+@keyframes anim2{
+  0%{
+     transform: scale(0);
+  }
+}
+.topright .circle{
+  top: -200px;
+  left: 0px;
+}
+.bottomleft .circle{
+top: -200px;
+left: -200px;
+}
+.bottomright{
+  width: 200px;
+  height: 200px;
+  background-color: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.diamond{
+  height: 70px;
+  width: 70px;
+  background-color: #dcd8c6;
+  transform: rotate(45deg);
+  animation: anim3 2s ease;
+}
+@keyframes anim3{
+  50%{
+    transform: rotate(-360deg);
+  }
+}
