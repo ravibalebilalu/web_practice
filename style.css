@@ -14,11 +14,73 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color: #fe4a49;
+  background-color: #ff2401;
   position: relative;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
  
+  .triangle{
+    display: flex;
+    gap: 32px;
+     justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+  }
+  
+.t1,.t2,.t3{
+  
+}
+@keyframes anim1{
+  50%{
+    transform: scale(0) rotate(160deg);
+    opacity: 0;
+
+  }
+}
+
+  .bar{
+    width: 35px;
+    background-color: #dcd8c6;
+    animation:  anim1 2s ease-in-out ;
+  }
+  .bar1{
+    height: 70px;
+   
+   
+  }
+  .bar2{
+    height: 120px;
+ 
+  }
+  .bar3{
+    height: 200px;
+   
+  }
+  .bar4{
+    height: 280px;
+    
+  }
+  .bar5{
+    height: 330px;
+  
+  }
+  .t1{
+    left:70px;
+  }
+
+  .t2{
+    transform: rotate(180deg);
+    top: -165px;
+    left: 35px;
+  }
+  .t3{
+    transform: rotate(180deg);
+    top: 235px;
+    left: 35px;
+  }
