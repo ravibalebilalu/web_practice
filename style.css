@@ -14,11 +14,90 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color: #fe4a49;
+  background-color: #dcd8c6;
   position: relative;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.left,.right{
+  height: 400px;
+  width: 196px;
+  background-color: #1b1b1b;
+  animation: anim2 2s ease-in-out;
+ 
+}
+@keyframes anim2{
+  0%{
+      border-radius: 0px;
+  }
+}
+.left{
+  border-radius: 0 0 35px 0;
+  display: flex;
+  justify-content: start;
+}
+
+.right{
+  border-radius: 0 0 0 35px ;
+  display: flex;
+  justify-content: end;
+}
+.redbox{
+  height: 250px;
+  width: 187px;
+  background-color: #ff2401;
+  border-color:   #dcd8c6;
+  border-style: solid;
+  animation: anim1 2s ease-in-out;
+}
+@keyframes anim1{
+  0%{
+    height: 400px;
+    opacity: 0;
+  }
+}
+ 
+.left .redbox{
+ 
+  border-radius: 0 0 35px 0;
+ 
+
+  border-width:0 8px 8px 0  ;
+}
+
+.whitebox{
+  height: 120px;
+  width: 170px;
+  background-color: #dcd8c6;
+  animation: anim3 2s ease-in-out;
+}
+
+@keyframes anim3{
+  0%{
+    transform: scale(0);
+    border-radius: 50%;
+  }
+}
+.left .whitebox{
+ 
+  border-radius: 0 0 35px 0;
+  display: flex;
+  justify-content: start;
+}
+
+.right .redbox{
+  
+  border-radius: 0  0  0  35px ;
+   
+  border-width:0  0 8px 8px   ;
+  display: flex;
+  justify-content: end;
+}
+.right .whitebox{
+   
+  border-radius: 0 0  0 35px;
 }
  
