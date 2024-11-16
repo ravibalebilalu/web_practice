@@ -14,7 +14,7 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color: #fe4a49;
+  background-color: #dcd8c6;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -22,3 +22,61 @@ body {
   align-items: center;
 }
  
+
+.box{
+height: 170px;
+width: 180px;
+background-color: #ff2401;
+  clip-path: polygon(40% 60%, 70% 60%, 100% 100%, 0% 100%);
+  position: absolute;
+  animation: anim1 2s ease-in-out;
+}
+@keyframes anim1 {
+  10%{
+     opacity: 0;
+      height: 0px;
+      transform: translate(4px);
+  }
+}
+.b1{
+  top: 31px;
+  left: 220px;
+}
+.b2{
+  top: -24px;
+    left: 131px;
+    transform: rotate(-45deg);
+}
+.b3{
+  top: 7px;
+  left: 28px;
+  transform: rotate(270deg);
+}
+
+.b4{
+  top: 95px;
+  left: -23px;
+  transform: rotate(-132deg);
+}
+.b5{
+  top: 200px;
+  left: 0px;
+  transform: rotate(180deg);
+}
+.b6{
+  top: 250px;
+  left: 95px;
+  transform: rotate(135deg);
+}
+
+.b7{
+  top: 220px;
+  left: 197px;
+  transform: rotate(90deg);
+}
+
+.b8{
+  top: 130px;
+  left: 250px;
+  transform: rotate(45deg);
+}
