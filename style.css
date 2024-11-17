@@ -14,11 +14,95 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color: #fe4a49;
+  background-color: #ff2401;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
- 
+ .bigcircle{
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-color: #dcd8c6;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: top;
+    animation: anim2 2s ease-in-out;
+ }
+
+ @keyframes anim2{
+  50%{
+    transform: scale(0);
+  }
+ }
+
+ .top,.middle,.bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+ }
+ .circle{
+  height: 200px;
+  width: 200px;
+  background-color: #ff2401;
+  border-radius: 50%;
+     
+   position: relative;
+   overflow: hidden;
+ }
+ .top,.bottom{
+  position: absolute;
+  z-index: 99;
+ }
+ .top{
+  top: 0px;
+  left:97px;
+ }
+ .bottom{
+  top:200px;
+  left: 100px;
+ }
+ .middle{
+  position: relative;
+  z-index: 45;
+ }
+
+ .whitecircle{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #dcd8c6;
+  position: absolute;
+ z-index: 999;
+ animation:  anim1 2s ease-in-out;
+ }
+ @keyframes anim1{
+  0%{
+    top: 0;
+    left: 0;
+    transform: scale(0);
+  }
+ }
+ .c1{
+  top: 100px;
+  left: 100px;
+ }
+ .c2{
+  top: 100px;
+  left: -100px;
+ }
+
+ .c3{
+  top: -100px;
+  left: -106px;
+ }
+
+
+ .c4{
+  top: -100px;
+  left: 94px;
+ }
