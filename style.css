@@ -14,11 +14,58 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color: #fe4a49;
+  background-color: #ff2401;
   position: relative;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
  
+.leftbar{
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  animation: anim1 2s ease-out;
+}
+@keyframes anim1{
+  0%{
+    gap:0px;
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+    transform: rotate(-180deg);
+  }
+}
+.rightbar{
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  animation: anim2 2s linear;
+}
+
+@keyframes anim2{
+  0%{
+    gap:100px;
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+    transform: rotate(180deg);
+  }
+}
+
+.circle{
+height: 50px;
+width: 50px;
+border-radius: 50%;
+background-color: #1b1b1b;
+}
