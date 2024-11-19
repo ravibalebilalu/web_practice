@@ -14,11 +14,145 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color: #fe4a49;
+  background-color:#ff2401;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.whitecircle{
+  height: 400px;
+  width: 400px;
+  background-color: #ff2401;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: anim2 2s ease-in-out;
+}
+
+
+
+.triangle{
+  height: 200px;
+  width: 200px;
+  background-color: #ff2401;
+  clip-path: polygon(50% 0%, 34% 100%, 64% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   position: absolute;
+ 
+}
+
+.triangle .blackbar{
+  height: 200px;
+  width: 15px;
+  background-color: #1b1b1b;
+   
+}
+
+.t1{
+  top: 200px;
+  left: 100px;
+  transform: rotate(0deg);
+}
+
+.t3{
+  top: 100px;
+  left: 0px;
+  transform: rotate(90deg);
+}
+.t2{
+  top: 150px;
+    left: 13px;
+    transform: rotate(60deg);
+}
+
+
+.t4{
+  top: 100px;
+  left: 200px;
+  transform: rotate(-90deg);
+}
+.t6{
+  top: 50px;
+  left: 13px;
+  transform: rotate(120deg);
+
+}
+.t5{
+  top: 13px;
+    left: 50px;
+    transform: rotate(150deg);
+}
+
+
+.t7{
+  top: 0px;
+  left: 100px;
+  transform: rotate(180deg);
+}
+.t8{
+  top: 13px;
+  left: 151px;
+  transform: rotate(210deg);
+}
+ 
+.t9{
+  top: 49px;
+    left: 188px;
+    transform: rotate(240deg);
+}
+ 
+.t10{
+  top: 187px;
+  left: 50px;
+  transform: rotate(30deg);
+}
+.t11{
+  top: 151px;
+    left: 187px;
+    transform: rotate(300deg);
+}
+.t12{
+  top: 188px;
+    left: 151px;
+    transform: rotate(330deg);
+}
+
+.blacckcircle{
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  transform: rotate(15deg);
+  animation: anim1 2s ease-in-out;
+}
+.blacckcircle .triangle .blackbar{
+  background-color: #dcd8c6;
+}
+
+.whiteplate{
+  height: 85px;
+  width: 85px;
+  background-color: #dcd8c6;
+  position: absolute;
+  border-radius: 50%;
+  
+}
+@keyframes anim1 {
+  50%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes anim2 {
+  50%{
+    transform: rotate(-360deg);
+  }
 }
  
