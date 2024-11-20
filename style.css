@@ -14,7 +14,7 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color: #fe4a49;
+  background-color: #1b1b1b;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -22,3 +22,68 @@ body {
   align-items: center;
 }
  
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+}
+
+.box1{
+  height: 200px;
+  width: 200px;
+  animation: anim2 2s ease-in-out;
+}
+
+@keyframes anim2{
+  0%{
+      background-color: #1b1b1b;
+      transform: scale(0);
+  }
+}
+
+
+.whitebox1{
+  background-color: #dcd8c6;
+}
+
+.blackbox1{
+  background-color: #1b1b1b;
+}
+
+.circle{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   animation: anim1 2s ease-in-out;
+}
+
+@keyframes anim1{
+  0%{
+    transform: rotate(360deg);
+  }
+}
+ .smallcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+ .box2{
+  height: 125px;
+  width: 125px;
+  background-color: red;
+ }
+
+ .blackbox2{
+  background-color: #1b1b1b;
+ }
+ .whitebox2{
+  background-color: #dcd8c6;
+ }
