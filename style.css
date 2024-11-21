@@ -14,11 +14,85 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color: #fe4a49;
+  background-color: #1b1b1b;
   position: relative;
   overflow: hidden;
   display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.circle{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+
+  display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  animation: anim1 2s   ease-in    ;
+}
+@keyframes anim1{
+  50%{
+    transform: scale(0) rotate(360deg);
+  }
+}
+.box{
+  height: 200px;
+  width: 100px;
+   
+}
+.box:nth-child(1){
+  background-color: #dcd8c6;
+}
+.box:nth-child(2){
+  background-color:#ff2401;
 }
  
+.bigbox,.bigsquare{
+  height: 200px;
+  width: 200px;
+overflow: hidden;
+ display: flex;
+position: relative;
+}
+
+.bigcircle{
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-color: #ff2401;
+  position: absolute;
+  top: 0px;
+  left: -200px;
+  animation: anim2 2s ease-in  ;
+}
+
+@keyframes anim2 {
+  50%{
+    height: 0px;
+    width: 0px;
+    
+  }
+}
+.smallaquare{
+  height: 200px;
+  width: 100px;
+  animation: anim3 2s ease-in  ;
+}
+
+@keyframes anim3{
+  50%{
+      opacity: 0;
+      transform: translate(400px, 0px);
+  }
+}
+
+.smallaquare:nth-child(1){
+  background-color: #dcd8c6;
+}
+
+.smallaquare:nth-child(2){
+  background-color: #ff2401;
+}
