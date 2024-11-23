@@ -14,11 +14,62 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color: #fe4a49;
+  background-color:#1b1b1b;
   position: relative;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
 }
- 
+
+.upperbox{
+  display: flex;
+  flex-direction: column;
+  
+}
+.box{
+  width: 400px;
+  height: 65px;
+  animation: anim1 2s ease-in-out;
+}
+@keyframes anim1{
+  50%{
+     transform: scale(0);
+  }
+}
+ .box:nth-child(1){
+  background-color: #dcd8c6;
+ }
+ .box:nth-child(2){
+  background-color: #ff2401;
+ }
+ .circle{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #dcd8c6;
+  animation: anim2 2s ease-in-out;
+ }
+ @keyframes anim2{
+  50%{
+    transform: translate(0px,100px);
+  }
+ }
+
+ .bigcircle{
+  height: 400px;
+  width: 400px;
+  background-color: #ff2401;
+  border-radius: 50%;
+  position: absolute;
+  top: 200px;
+  animation: anim3 2s ease-in-out;
+ }
+
+ @keyframes anim3{
+  50%{
+    top: -200px;
+     transform: scale(0);
+  }
+ }
