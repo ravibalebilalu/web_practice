@@ -24,7 +24,17 @@ body {
  
  .box{
   height: 100px;
-  width: 200px;
-  background-color: #dcd8c6;
-  transform: bend(45deg);
+  width: 100px;
+   
+   border-style: solid;
+   border-color: #dcd8c6;
+   border-width: 50px 50px 0px 0px;
+   border-radius: 20px;
+ 
+ }
+.b1{
+  transform: skew(35deg) rotate(130deg);
+}
+ .b2{
+  transform:skew(35deg)  rotate(130deg);
  }
