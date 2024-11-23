@@ -14,11 +14,17 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#1b1b1b;
+  background-color:#ff2401;
   position: relative;
   overflow: hidden;
   display: flex; 
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
-
+ 
+ .box{
+  height: 100px;
+  width: 200px;
+  background-color: #dcd8c6;
+  transform: bend(45deg);
+ }
