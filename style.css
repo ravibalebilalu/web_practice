@@ -14,11 +14,42 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#1b1b1b;
+  background-color:#ff2401;
   position: relative;
   overflow: hidden;
   display: flex; 
-  justify-content: start;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  
+}
+ 
+.whitebox{
+  width: 330px;
+  height: 120px;
+  background-color: #dcd8c6;
+  border-radius: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: anim1 2s ease-in-out infinite;
+}
+@keyframes anim1{
+  50%{
+      background-color: #ff2401;
+       
+  }
+}
+.blackbox{
+  width: 255px;
+  height: 50px;
+  background-color: #1b1b1b;
+  border-radius: 45px;
+  animation: anim2 2s ease-in-out infinite;
+}
+@keyframes anim2{
+  50%{
+    transform: scale(0) rotate(360deg);
+  }
 }
 
