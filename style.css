@@ -14,11 +14,61 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#1b1b1b;
+  background-color: #ff2401;
   position: relative;
   overflow: hidden;
   display: flex; 
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
+.blackbox{
+  height: 300px;
+  width: 300px;
+  background-color: #1b1b1b;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  
+}
+ 
+.redbox{
+  height: 100px;
+  width: 100px;
+  background-color: #ff2401;
+  animation: anim3 2s ease-in-out infinite;
+}
+@keyframes anim3{
+  50%{
+    opacity: 0;
+     
+  }
+}
+.toptriangle{
+  
+  width: 200px;
+  height: 200px;
+  background-color: #ff2401;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: anim1 2s ease-in-out infinite;
+}
 
+
+.bottomtriangle{
+  
+  width: 200px;
+  height: 200px;
+  background-color: #ff2401;
+  clip-path: polygon(100% 100%, 0% 100%, 100% 0);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: anim1 2s ease-in-out infinite;
+}
+@keyframes anim1{
+  50%{
+    opacity: 0;
+  }
+}
