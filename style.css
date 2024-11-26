@@ -14,11 +14,67 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#1b1b1b;
+  background-color:#ff2401;
   position: relative;
   overflow: hidden;
   display: flex; 
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
+
+.seed{
+  height: 125px;
+  width: 125px;
+  background-color: #dcd8c6;
+  border-radius: 50%;
+  border: 10px solid #ff2401;
+  position: absolute;
+  z-index: 100;
+  animation: anim2 2s ease-in-out infinite;
+}
+@keyframes anim2{
+  50%{
+    transform: scale(0);
+  }
+}
+.container{
+  width: 220px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.circle{
+  height: 140px;
+  width: 140px;
+  background-color: #1b1b1b;
+  border-radius: 50%;
+    position: absolute;
+    animation: anim1 2s ease-in-out infinite;
+}
+
+@keyframes anim1 {
+  50%{
+    transform: scale(0);
+   
+    opacity: 0;
+  }
+}
+
+ 
+.c1{
+  top: 80px;
+  left: 80px;
+}
+.c2{
+  top: 80px;
+  left: 180px;
+}
+.c3{
+  top: 180px;
+  left: 80px;
+}
+.c4{
+  top: 180px;
+  left: 180px;
+}
+
 
