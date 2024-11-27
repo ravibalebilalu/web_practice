@@ -1,24 +1,92 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 body {
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mainbox {
-  height: 400px;
-  width: 400px;
-  background-color:#1b1b1b;
-  position: relative;
-  overflow: hidden;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
+    height: 400px;
+    width: 400px;
+    background-color: #ff2401;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upper,
+.lower {
+    display: flex;
 }
 
+.circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    animation: anim1 4s ease-in-out infinite;
+}
+
+@keyframes anim1{
+  50%{
+    transform: scale(0);
+  }
+}
+.cw {
+    background-color: #dcd8c6;
+}
+.cb {
+    background-color: #1b1b1b;
+}
+.triangle {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    animation: anim2 4s ease-in-out infinite;
+}
+@keyframes anim2{
+  50%{
+     opacity: 0;
+     transform: scale(0) translate(200px,500px);
+  }
+}
+
+.triangle1 {
+    clip-path: polygon(100% 0, -4% 0, 100% 100%);
+
+    background-color: #dcd8c6;
+    top: 100px;
+    left: 0px;
+}
+.triangle2 {
+    clip-path: polygon(100% 0, -4% 0, 100% 100%);
+
+    background-color: #1b1b1b;
+    top: 300px;
+    left: 0px;
+}
+.cb2{
+  z-index: 100;
+}
+.triangle3{
+  clip-path: polygon(0 100%, 0 0, 100% 100%);
+  background-color: #1b1b1b;
+  left: 200px;
+  top: 100px;
+}
+.cw2{
+  z-index: 100;
+}
+.triangle4{
+  clip-path: polygon(0 100%, 0 0, 100% 100%);
+  background-color:#dcd8c6;
+  left: 200px;
+  top: 300px;
+}
