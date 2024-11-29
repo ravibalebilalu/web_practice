@@ -8,17 +8,119 @@ body {
   width: 100vw;
   background-color: black;
   display: flex;
+  
   justify-content: center;
   align-items: center;
 }
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#12a9b0;
   position: relative;
   overflow: hidden;
   display: flex; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.darkblue,.whitecontainer,.redcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: -50px;
+  position: absolute;
+  animation:anim1 5s ease-out infinite
+}
+.darkblue{
+  
+  top: 0px;
+}
+.whitecontainer{
+  
+  top:110px;
+}
+.redcontainer{
+  top: 230px;
+}
+
+.darkbluecircle{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #002f43;
+  margin-left: -20px;
+  
+   
+
+}
+
+@keyframes anim1{
+  50%{
+     transform: translate(0px,400px) scale(0);
+      
+  }
+}
+.darkbluerect{
+  height: 100px;
+  width: 400px;
+  background-color: #002f43;
+  position: absolute;
+  left: 60px;
+  top: 105px;
+}
+
+.whiterect{
+  height: 100px;
+  width: 400px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 60px;
+  top: 110px;
+}
+
+.whitecircle{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-left: -20px;
+}
+.redcircle{
+  height: 80px;
+  width: 160px;
+  border-radius: 80px 80px 0 0;
+  background-color: #e3747a;
+  margin-left: -15px;
+}
+
+.redrect{
+  height: 60px;
+  width: 400px;
+  background-color: #e3747a;
+  position: absolute;
+  left: 90px;
+  top: 60px;
+}
+ .redcontainer1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: -50px;
+  position: absolute;
+  top: 325px;
+  left: -10px;
+  animation:anim2 5s ease-out infinite
+}
+@keyframes anim2{
+  50%{
+     opacity: 0;
+  }
+}
+.redcontainer1 .redcircle{
+  
+  transform: rotate(180deg);
+   
+   
+}
+
  
