@@ -14,11 +14,136 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#f23d0c;
   position: relative;
   overflow: hidden;
   display: flex; 
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
 }
  
+.head{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: #eaa747;
+  margin-top: 30px;
+  
+}
+.hands{
+  height: 55px;
+  width: 300px;
+  background-color: #eaa747;
+  border-radius: 30px;
+  display: flex;
+  gap: 210px;
+  justify-content:center;
+  align-items: center;
+  position: absolute;
+  top: 140px;
+  animation:  hands 2s ease-in-out infinite;
+}
+@keyframes hands {
+  50%{
+    width: 250px;
+    gap: 150px;
+  }
+}
+.whitepatch{
+  width: 17px;
+  height: 55px;
+  background-color: #ffffff;
+}
+
+.body1{
+  height: 230px;
+  width: 140px;
+  background-color: #eaa747;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: absolute;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    z-index: 20;
+}
+.button{
+  height: 28px;
+  width: 28px;
+  background-color: #0a0e2d;
+  border-radius: 50%;
+  position: absolute;
+ animation:  buttons 2s ease-in-out infinite;
+}
+@keyframes buttons{
+  50%{
+     transform: scale(.7);
+  }
+}
+.b1{
+  top: 180px;
+  z-index: 1000;
+}
+
+.b2{
+  top: 130px;
+  z-index: 1000;
+}
+.legs{
+  display: flex;
+  gap: 7px;
+  position: absolute;
+  top: 160px;
+   
+}
+
+.leg{
+  height: 200px;
+  width: 70px;
+  background-color: #eaa747;
+ border-radius: 40px;
+ display: flex;
+ justify-content: end;
+ align-items: end;
+ z-index: 1;
+}
+
+.leftl{
+  transform: rotate(15deg);
+  animation: leftleg 2s ease-in-out infinite;
+}
+@keyframes leftleg{
+  50%{
+    transform: rotate(20deg);
+    height: 190px;
+  }
+}
+.rightl{
+  transform: rotate(-15deg);
+  animation: rightleg 2s ease-in-out infinite;
+}
+@keyframes rightleg{
+  50%{
+    transform: rotate(-20deg);
+    height: 190px;
+  }
+}
+
+.legwhitepatch{
+  height: 18px;
+  width: 70px;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.redcircle{
+  height: 15px;
+  width: 15px;
+  background-color: #f23d0c;
+  border-radius: 50%;
+  position: absolute;
+  top: 275px;
+  z-index: 999999;
+}
