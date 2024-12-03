@@ -14,11 +14,97 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color: #bed8ee;
   position: relative;
   overflow: hidden;
-  display: flex; 
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 50px;
 }
+.branch{
+  display: flex;
+  position: relative;
+}
+.fruits {
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: -140px;
+  animation:  fruit 2s ease-in-out infinite;
+}
+
+.fruit {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: #f23d0c;
+  
+}
+@keyframes fruit{
+  50%{
+       
+      gap: 50px;
+      
+  }
+}
+.f1{
+  z-index: 997777;
+}
+.f2{
+  z-index: 999999;
+}
+.f3 {
+  margin-top: -13px;
+}
+.leaves{
+  display: flex;
+   position: absolute;
+}
+.l1{
+  left: -225px;
+  top: -78px;
+  z-index: 9999;
+  transform: rotate(-45deg);
+}
+.l2{
+  left: -140px;
+  top: -135px;
+  z-index: 8888;
+  transform: rotate(0deg);
+}
+
+.l3{
+  left: -26px;
+  top: -149px;
+  transform: rotate(45deg);
+}
+
+.leaf{
+  height: 200px;
+  width: 180px;
+  border-radius: 50%;
+  animation:  leaf 2s ease-in-out infinite;
+}
+@keyframes leaf{
+  50%{
+    transform:  translate(200px,-200px);
+  }
+}
+.leaf12 {
  
+  background-color: #bed8ee;
+  position: relative;
+  overflow: hidden;
+}
+.leaf22{
+  
+  background-color: #163a0d;
+  position: absolute;
+  left: 100px;
+  right: 0px;
+}
