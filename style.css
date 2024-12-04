@@ -14,11 +14,82 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color: #eaa747;
   position: relative;
   overflow: hidden;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
 }
- 
+
+.bigsquare {
+  height: 260px;
+  width: 260px;
+  background-color: #163a0d;
+  transform: rotate(45deg);
+}
+
+.diamonds {
+  position: absolute;
+  animation: diamonds 5s ease-in-out infinite;
+}
+@keyframes diamonds {
+  50%{
+    transform: rotate(360deg) scale(0);
+  }
+}
+.upperdiamonds,
+.lowerdiomomds {
+  display: flex;
+
+}
+.upperdiamonds {
+  margin-bottom: -56px;
+}
+ .d1,.d3{
+margin-right: -20px;
+ }
+.dimond {
+  height: 180px;
+  width: 140px;
+  background-color: #f23d0c;
+  clip-path: polygon(50% 0%, 100% 40%, 50% 100%, 0 40%);
+}
+.d1 {
+  transform: rotate(-45deg);
+}
+.d2 {
+  transform: rotate(45deg);
+}
+
+.d3 {
+  transform: rotate(-135deg);
+}
+
+.d4 {
+  transform: rotate(135deg);
+}
+.flower{
+  display: flex;
+  position: absolute;
+  width: 70px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(180deg);
+  
+}
+.petal{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: -5px;
+  animation: petal 5s infinite;
+}
+@keyframes petal{
+  30%{
+    transform: scale(0) translate(300px,0px);
+    opacity: 0;
+  }
+}
