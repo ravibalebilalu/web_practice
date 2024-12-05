@@ -14,11 +14,90 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color: #eaa747;
   position: relative;
   overflow: hidden;
-  display: flex; 
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   align-items: center;
 }
- 
+.triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: #163a0d;
+  position: absolute;
+}
+.t1 {
+  height: 150px;
+  width: 210px;
+  top: 0px;
+}
+.t2 {
+  height: 200px;
+  width: 270px;
+  top: 80px;
+z-index:30;
+}
+
+.t3 {
+  height: 250px;
+  width: 300px;
+}
+
+.redbulb {
+  background-color: #f23d0c;
+  border-radius: 50px;
+  position: absolute;
+  animation: redbulb 2s ease-in-out infinite;
+}
+@keyframes redbulb{
+  60%{
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+.t1 .redbulb {
+  height: 25px;
+  width: 25px;
+  left: 123px;
+  top: 76px;
+}
+.whitebulb {
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 50%;
+  animation: whitebulb 2s ease-in-out infinite;
+}
+
+@keyframes whitebulb{
+  30%{
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+.t2 .whitebulb {
+  height: 30px;
+  width: 30px;
+  top: 80px;
+  left: 87px;
+}
+.t2 .redbulb {
+  height: 40px;
+  width: 40px;
+  top: 140px;
+  left: 170px;
+z-index:40;
+}
+
+.t3 .redbulb {
+  height: 50px;
+  width: 50px;
+  top: 150px;
+  left: 75px;
+}
+.t3 .whitebulb {
+  height: 23px;
+  width: 23px;
+  top: 205px;
+  left: 200px;
+}
