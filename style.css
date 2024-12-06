@@ -14,11 +14,90 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color: #0a0e2d;
   position: relative;
   overflow: hidden;
-  display: flex; 
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
- 
+.circle {
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top:100px;
+}
+.box {
+  height: 230px;
+  width: 244px;
+  background-color: #eaa747;
+  clip-path: polygon(0 0, 100% 0, 90% 60%, 10% 60%);
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 220px;
+  animation: box 2s ease-in-out infinite;
+}
+
+@keyframes box{
+  50%{
+    width: 250px;
+  }
+}
+.smallcircle {
+  height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+    position: absolute;
+    top: -18px;
+    left: 20px;
+}
+.bigbar {
+  height: 75px;
+  width: 35px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  position: absolute;
+    top: -12px;
+    left: 130px;
+}
+.smallbar {
+  height: 50px;
+  width: 30px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  position: absolute;
+  top: -10px;
+  left: 190px;
+}
+.redcircle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #f23d0c;
+  position: absolute;
+  top: 60px;
+  animation: redb 2s ease-in-out infinite;
+}
+@keyframes redb{
+  50%{
+    opacity: 0;
+    transform: translate(0px,100px);
+  }
+}
+.drop{
+  animation: drop 2s ease-in-out infinite;
+}
+
+@keyframes drop{
+  50%{
+     height: 0px;
+     width: 0px;
+   
+      
+  }
+}
