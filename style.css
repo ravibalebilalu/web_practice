@@ -14,10 +14,59 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#163a0d;
   position: relative;
   overflow: hidden;
   display: flex; 
   justify-content: center;
   align-items: center;
+  z-index: 999;
+}
+
+.stick{
+  transform: rotate(-45deg);
+}
+.mainbody{
+  height: 120px;
+  width: 400px;
+  border-radius: 60px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.centerbody{
+  height: 60px;
+  width: 350px;
+  border-radius: 50px;
+  background-color: #163a0d;
+  z-index: 999;
+}
+.uppermask{
+  width: 350px;
+    height: 100px;
+    background-color: #163a0d;
+    position: absolute;
+    left: 85px;
+    top: -11px;
+}
+.bottommask{
+  width: 100px;
+  height: 100px;
+  background-color: #163a0d;
+   
+  position: absolute;
+  left: 350px;
+    top: 80px;
+}
+
+.redstrip{
+  height: 60px;
+  width: 50px;
+  background-color: #f23d0c;
+  position: absolute;
+  z-index: 888;
+  left: 0px;
+  top: 0px;
 }
