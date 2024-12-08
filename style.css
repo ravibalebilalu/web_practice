@@ -14,10 +14,83 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#eaa747;
   position: relative;
   overflow: hidden;
   display: flex; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.candy{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-45deg);
+}
+.circle{
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background-color: #0a0e2d;
+  overflow: hidden;
+  display: flex; 
+ position: relative;
+  justify-content: start;
+  align-items: center;
+  animation: cr 2s ease-in-out infinite;
+}
+.triangle{
+  height: 130px;
+  width: 190px;
+  background-color: #ffffff;
+  animation: tr 2s ease-in-out infinite;
+}
+@keyframes cr{
+  50%{
+    transform:  rotateX(360deg)  ;
+    
+  }
+}
+@keyframes tr{
+  50%{
+    transform: scale(0) rotateY( 360deg);
+    margin: 200px;
+  }
+}
+
+.t1{
+  clip-path: polygon(50% 100%, 0 50%, 100% 50%);
+
+}
+.t2{
+  clip-path: polygon(50% 1%, 0 50%, 100% 50%);
+}
+
+.box{
+  height:63px;
+  width: 50px;
+  background-color: #ffffff;
+position: absolute;
+}
+
+.b1 ,.b3{
+  transform: skewY(-25deg)
+}
+.b2,.b4{
+  transform: skewY(25deg)
+}
+.b1{
+  left: 0px;
+}
+
+.b2{
+  left: 49px;
+}
+.b3{
+  left: 98px;
+}
+.b4{
+  left: 147px;
 }
