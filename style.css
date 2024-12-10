@@ -14,10 +14,84 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#f23d0c;
   position: relative;
   overflow: hidden;
   display: flex; 
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
 }
+
+
+.stack{
+  display: flex;
+  flex-direction: column;
+
+
+}
+.white{
+  height: 125px;
+  width:15px;
+  background-color: #ffffff;
+}
+.yellow{
+  height: 25px;
+  width: 15px;
+  background-color: #eaa747;
+}
+.bluecircle{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #0a0e2d;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+ .square{
+  height: 155px;
+  width: 130px;
+  background-color: #eaa747;
+  clip-path: polygon(50% 0%, 70% 50%, 50% 100%, 30% 50%);
+  position: absolute;
+  animation: square 5s ease-in-out infinite;
+ }
+
+ @keyframes square{
+  50%{
+    width: 0px;
+    height: 100px;
+  }
+   
+ }
+ .s1{transform: rotate(0deg);}
+ .s2{transform: rotate(20deg);}
+ .s3{transform: rotate(40deg);}
+ .s4{transform: rotate(60deg);}
+ .s5{transform: rotate(80deg);}
+ .s6{transform: rotate(100deg);}
+ .s7{transform: rotate(120deg);}
+ .s8{transform: rotate(140deg);}
+ .s9{transform: rotate(160deg);}
+ .s10{transform: rotate(180deg);}
+ .s11{transform: rotate(200deg);}
+ .s12{transform: rotate(220deg);}
+ .s13{transform: rotate(240deg);}
+ .s14{transform: rotate(260deg);}
+ .s15{transform: rotate(280deg);}
+ .s16{transform: rotate(300deg);}
+ .s17{transform: rotate(320deg);}
+ .s18{transform: rotate(3400deg);}
+  
+
+ .sun{
+  height: 60px;
+  width: 60px;
+  background-color: #ffffff;
+ border-radius: 50%;
+ position: absolute;
+ top: 220px;
+ }
