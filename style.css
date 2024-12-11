@@ -14,10 +14,79 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#163a0d;
   position: relative;
   overflow: hidden;
   display: flex; 
   justify-content: center;
   align-items: center;
+}
+
+.seed{
+  height: 200px;
+  width: 200px;
+  background-color: #bed8ee;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rays{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  left: 200px;
+}
+.box1{
+  height: 50px;
+  width: 50px;
+  background-color: #bed8ee;
+  clip-path: polygon(50% 0%, 100% 95%, 50% 100%, 0 95%);
+  position: absolute;
+  top: 0px;
+}
+.box2{
+  height: 50px;
+  width: 100px;
+  background-color: #bed8ee;
+  clip-path: polygon(50% 0%, 100% 6%, 51% 45%, 0 9%);
+  position: absolute;
+  top: 0px;
+}
+.box3{
+  height: 50px;
+  width: 50px;
+  background-color: #bed8ee;
+  clip-path: polygon(51% 58%, 100% 92%, 49% 100%, 0 90%);
+  position: absolute;
+  top: 0px;
+}
+
+.box4{
+  height: 50px;
+  width: 150px;
+  background-color: #bed8ee;
+  clip-path: polygon(50% 0%, 100% 6%, 51% 45%, 0 9%);
+  position: absolute;
+  top: 0px;
+}
+.box5{
+  height: 30px;
+  width: 30px;
+  background-color: #bed8ee;
+  clip-path: polygon(51% 58%, 100% 92%, 49% 100%, 0 90%);
+  position: absolute;
+  top: 0px;
+}
+.box6{
+  height: 50px;
+  width: 150px;
+  background-color: #bed8ee;
+  clip-path: polygon(50% 0%, 100% 6%, 51% 45%, 0 9%);
+  position: absolute;
+  top: 0px;
 }
