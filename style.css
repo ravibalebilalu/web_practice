@@ -14,10 +14,69 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#bed8ee;
   position: relative;
   overflow: hidden;
   display: flex; 
   justify-content: center;
   align-items: center;
+}
+.yellowbox{
+  height: 300px;
+  width: 300px;
+  background-color: #eaa747;
+}
+
+.bigbox,.smallbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+}
+.bigbox{
+  animation: bigbox 4s ease-in-out infinite;
+}
+
+@keyframes bigbox{
+  50%{
+transform: rotate(360deg) scale(0) translate(300px,0px);
+  }
+}
+.smallbox{
+  animation: smallbox 4s ease-in-out infinite;
+}
+@keyframes smallbox{
+  50%{
+  transform: translate(100px,100px) scale(0) rotate(-360deg);
+  }
+}
+
+.bighor{
+  height: 300px;
+  width: 35px;
+  background-color: #0a0e2d;
+  position: absolute;
+  transform: rotate(45deg);
+}
+.bigver{
+  height: 35px;
+  width: 300px;
+  background-color: #0a0e2d;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.smallhor{
+  height: 300px;
+  width: 20px;
+  background-color: #0a0e2d;
+  position: absolute;
+}
+
+.smallver{
+  height: 20px;
+  width: 300px;
+  background-color: #0a0e2d;
+  position: absolute;
 }
