@@ -14,10 +14,105 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color: #f23d0c;
   position: relative;
   overflow: hidden;
-  display: flex; 
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.cap {
+  height: 50px;
+  width: 40px;
+  background-color: #0a0e2d;
+  border-radius: 6px 6px 0px 0px;
+}
+.yellowband {
+  height: 6px;
+  width: 40px;
+  background-color: #eaa747;
+}
+.neck {
+  height: 80px;
+  width: 40px;
+  background-color: #163a0d;
+  margin-bottom: -40px;
+  
+}
+.curve {
+  height: 140px;
+  width: 240px;
+  background-color: #163a0d;
+  clip-path: ellipse(25% 49% at 50% 50%);
+  margin-bottom: -62px;
+  
+ 
+}
+.bottlebody {
+  height: 150px;
+  width: 120px;
+  background-color: #163a0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+  overflow: hidden;
+ 
+}
+.bigstar {
+  height: 60px;
+  width: 60px;
+  background-color: #0a0e2d;
+   
+  clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  animation: star 2s ease-in-out infinite;
+  z-index: 100;
+}
+@keyframes star{
+  50%{
+    transform: translate(0px,-200px) scale(0) rotate(360deg);
+  }
+}
+
+.smallstar {
+height: 40px;
+width: 40px;
+background-color: #eaa747;
+ 
+clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+);
+}
+.bottom {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #0a0e2d;
+  transform: rotateX(75deg);
+  margin-top: -62px;
 }
