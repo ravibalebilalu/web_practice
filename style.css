@@ -14,10 +14,41 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#0a0e2d;
   position: relative;
   overflow: hidden;
   display: flex; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.glassbody{
+  height: 170px;
+  width: 95px;
+  background-color: #f8f7fc;
+  border-radius:0px  0px 136px 153px/164px;
+  overflow: hidden;
+  display: flex;
+  align-items: end;
+}
+.liquide{
+  height: 110px;
+  width: 100px;
+  background-color: #f23d0c;
+  animation: liquide 2s ease-in-out infinite;
+}
+
+@keyframes liquide{
+  50%{
+    height: 0px;
+     opacity: 0;
+  }
+}
+
+.base{
+  height: 135px;
+  width: 150px;
+background-color: #f8f7fc;
+  clip-path: polygon(50% 0%, 30% 100%, 70% 100%);
 }
