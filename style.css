@@ -14,10 +14,93 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#1f6636;
   position: relative;
   overflow: hidden;
   display: flex; 
   justify-content: center;
   align-items: center;
+}
+.hrbar{
+  height: 14px;
+  width: 270px;
+  background-color: #ffffff;
+}
+.verbar{
+  height: 270px;
+  width: 14px;
+  background-color: #ffffff;
+  position: absolute;
+}
+.box{
+  height: 60px;
+  width: 60px;
+  
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 12px 12px 0px 0px;
+  position: absolute;
+  animation: box 2s ease-in-out infinite;
+}
+
+@keyframes box{
+  50%{
+    height: 0px;
+    width: 0px;
+    top: 200px;
+    left: 200px;
+  }
+}
+.b1{
+  top: 62px;
+  left: 171px;
+  transform: rotate(135deg);
+}
+.b2{
+  top: 170px;
+  left: 55px;
+  transform: rotate(45deg);
+}
+.b3{
+  top: 290px;
+    left: 170px;
+    transform: rotate(-45deg);
+}
+.b4{
+  top: 170px;
+  left: 282px;
+  transform: rotate(-130deg);
+}
+.bar{
+  height: 12px;
+  width: 55px;
+  background-color: #ffffff;
+  position: absolute;
+  animation: bar 2s ease-in-out infinite;
+}
+@keyframes bar{
+  50%{
+     width: 0px;
+     height: 0px;
+  }
+}
+.br1{
+  top: 137px;
+    left: 115px;
+    transform: rotate(45deg);
+}
+.br2{
+  top: 255px;
+  left: 229px;
+  transform: rotate(45deg);
+}
+.br3{
+  top: 257px;
+  left: 110px;
+  transform: rotate(135deg);
+}
+.br4{
+  top: 136px;
+  left: 232px;
+  transform: rotate(135deg);
 }
