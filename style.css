@@ -8,16 +8,94 @@ body {
   width: 100vw;
   background-color: black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color: #ff4026;
   position: relative;
   overflow: hidden;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.box {
+  height: 100px;
+  width: 230px;
+  background-color: #1f6636;
+  transform: perspective(200px) rotateX(35deg);
+  margin-bottom: -220px;
+  animation: box 2s ease-in-out infinite;
+}
+
+@keyframes box{
+  50%{
+      
+     border-radius: 50%;
+  }
+}
+
+.balscontainer {
+  display: flex;
+  position: absolute;
+  top: 274px;
+}
+
+.bigballs {
+  height: 25px;
+  width: 50px;
+  border-radius: 100px 100px 0px 0px;
+  border-top: transparent;
+  background-color: #ffffff;
+  transform: rotate(180deg);
+  animation: bb 2s ease-in-out infinite;
+}
+
+@keyframes bb{
+  50%{
+    transform: scale(0) rotate(-360deg);
+    
+  }
+}
+
+.pinkball {
+  height: 250px;
+  width: 250px;
+  background-color: #ffadc7;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+ 
+}
+  .thirdrow{
+
+    margin-bottom:30px;
+  }
+.smallball {
+  height: 30px;
+  width: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  animation: sb 2s ease-in-out infinite;
+}
+
+@keyframes sb{
+  50%{
+    transform: scale(0);
+    background-color: #ffadc7;
+  }
 }
