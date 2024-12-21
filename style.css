@@ -14,10 +14,99 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#f8edd1;
   position: relative;
   overflow: hidden;
   display: flex; 
   justify-content: center;
   align-items: center;
+}
+
+.top,.middle,.bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.top{
+  top: -115px;
+  z-index: 100;
+  animation: top 2s ease-in-out infinite;
+}
+
+@keyframes top {
+  50%{
+    transform: translate(0px ,-400px);
+  }
+}
+.triangle{
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: absolute;
+}
+
+ .circle{
+  
+ clip-path: ellipse(50% 21% at 50% 50%);
+  position: absolute;
+}
+
+.top .triangle{
+  height: 100px;
+  width: 200px;
+  background-color: #006f57;
+}
+
+.top .circle{
+  height: 150px;
+  width: 200px;
+  background-color: #006f57;
+  top: -21px;
+}
+
+.middle{
+  z-index: 99;
+  top: -50px;
+  animation: middle 2s ease-in-out infinite;
+}
+
+@keyframes middle {
+  50%{
+    transform: scale(0) ;
+  }
+}
+.middle .triangle{
+  height: 125px;
+  width: 250px;
+  background-color: #cc1623;
+}
+
+.middle .circle{
+  height: 125px;
+  width: 250px;
+  background-color: #cc1623;
+  top: 0px;
+}
+.bottom{
+  top: 20px;
+  z-index: 98;
+  animation: bottom 2s ease-in-out infinite;
+}
+@keyframes bottom {
+  50%{
+    transform: translate(0px ,400px);
+  }
+}
+.bottom .triangle{
+  height: 150px;
+  width: 300px;
+  background-color: #006f57;
+}
+
+.bottom .circle{
+  height: 150px;
+  width: 297px;
+  background-color: #006f57;
+  top:0px;
 }
