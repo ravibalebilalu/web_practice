@@ -14,10 +14,105 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#f8edd1;
   position: relative;
   overflow: hidden;
   display: flex; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+.topbox{
+  height: 100px;
+  width: 85px;
+  background-color: #006f57;
+  position: relative;
+  top:20px;
+  z-index: 99;
+}
+.circle{
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  background-color: #f9d213;
+  display: flex;justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  top: -30px;
+}
+.ar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+   position: absolute;
+   left: 72px;
+}
+.b1{
+  margin-left: -98px;
+}
+.b2{
+  transform: rotate(180deg);
+  right: 72px;
+  margin-left: 150px;
+}
+.box1{
+  height: 50px;
+  width: 50px;
+  border-color: #006f57;
+  border-style: solid;
+  border-width: 5px 5px 0px 0px;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: box1 5s ease-in-out infinite;
+}
+
+@keyframes box1{
+  50%{
+    transform: skewY(275deg);
+     
+  }
+}
+.box2{
+  height: 30px;
+  width: 30px;
+  border-color: #006f57;
+  border-style: solid;
+  border-width: 4px 4px 0px 0px;
+ 
+   
+}
+.shaft{
+  width: 200px;
+  height: 6px;background-color: #006f57;
+  animation: shaft 5s ease-in-out infinite;
+}
+
+@keyframes shaft{
+  50%{
+     transform: scale(0);
+  }
+}
+.ar{
+  position: absolute;
+}
+.arrow1 {
+  transform: rotate(0deg);
+}
+.arrow2 {
+  transform: rotate(45deg);
+}
+.arrow3 {
+  transform: rotate(90deg);
+}
+
+.arrow4 {
+  transform: rotate(135deg);
+}
+
+ 
