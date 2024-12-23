@@ -14,10 +14,104 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#000;
   position: relative;
   overflow: hidden;
   display: flex; 
   justify-content: center;
   align-items: center;
 }
+.outercircle{
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: 10px solid #f7d50b;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+.middelcircle{
+  height: 380px;
+  width: 380px;
+  border-radius: 50%;
+    background-color:#4b96bf;
+  border: 40px solid #2a3951;
+  position: relative;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  animation: bar 5s ease-in-out infinite;
+}
+@keyframes bar{
+  50%{
+    transform: rotate(360deg);
+  }
+}
+.bar{
+  height: 26px;
+  width: 350px;
+  background-color: #2a3951;
+  position: absolute;
+  
+}
+
+.b2{
+  transform: rotate(45deg);
+}
+.b3{
+  transform: rotate(90deg);
+}
+.b4{
+  transform: rotate(135deg);
+}
+
+.centercircle{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: #c2d9ef;
+  position: absolute;
+}
+
+.threestars{
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  animation: stars 1s ease-in-out infinite;
+}
+
+@keyframes stars {
+  50%{
+    opacity: .2;
+  }
+}
+.star{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #f7d50b;
+}
+
+.th1{
+  top: 30px;
+  left: 0px;
+  transform: rotate(-45deg);
+}
+
+.th2{
+  top: 30px;
+  left: 315px;
+  transform: rotate(45deg);
+}
+.th3{
+  top: 345px;
+  left: 315px;
+  transform: rotate(-45deg);
+}
+.th4{
+  top: 340px;
+  left: 0px;
+  transform: rotate(45deg);
+}
+
+
