@@ -14,10 +14,74 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#02081C;
   position: relative;
   overflow: hidden;
   display: flex; 
   justify-content: center;
   align-items: center;
+}
+
+.line{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 16px;
+position: absolute;
+}
+.ball1{
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+background-color: #2A3951;
+animation: ball1 5s ease-in-out infinite;
+}
+@keyframes ball1{
+  20%{
+    opacity: .2;
+  }
+}
+.ball2{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+background-color: #4B96BF;
+animation: ball2 5s ease-in-out infinite; 
+}
+@keyframes ball2{
+  50%{
+    opacity: .0;
+  }
+}
+.ball3{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+background-color: #F7D50B;
+margin-top: 22px;
+margin-bottom: 22px;
+animation: ball3 5s ease-in-out infinite; 
+}
+@keyframes ball3{
+  50%{
+    margin-top: -20px;
+    margin-bottom: -20px;  
+  }
+}
+
+.l2{
+  transform: rotate(30deg);
+}
+.l3{
+  transform: rotate(60deg);
+}
+.l4{
+  transform: rotate(90deg);
+}
+.l5{
+  transform: rotate(120deg);
+}
+.l6{
+  transform: rotate(150deg);
 }
