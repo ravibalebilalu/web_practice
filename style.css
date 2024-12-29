@@ -14,10 +14,87 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#21252C;
   position: relative;
   overflow: hidden;
   display: flex; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+.upper,.lower{
+  display: flex;
+  position: absolute;
+   
+}
+.triangle{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  animation: tr 3s ease-in-out infinite;
+}
+
+@keyframes tr{
+  25%{
+     transform: skewY(40deg) rotate(180deg);
+     width: 100px;
+     border-radius: 50%;
+  }
+  50%{
+    transform: skewY(-40deg)rotate(180deg) ;
+    width: 100px;
+    border-radius: 50%;
+ }
+}
+.tr1{
+ 
+  background-color: #3AA5AC;
+  clip-path: polygon(0 0, 0% 100%, 49% 100%);
+  left: 100px;
+}
+
+.tr2{
+ 
+  background-color: #34383F;
+  clip-path: polygon(0 0, 0% 100%, 49% 100%);
+  left: 300px;
+}
+
+.tr3{
+ 
+  background-color: #34383F;
+  clip-path: polygon(100% 0, 50% 100%, 100% 100%);
+  left: -100px; 
+}
+.tr4{
+ 
+  background-color: #ECECEC;
+  clip-path: polygon(100% 0, 50% 100%, 100% 100%);
+  left: 100px;
+}
+.upper{
+  top: 0px;
+  left: 0px;
+}
+.lower .tr1{
+  background-color: #34383F;
+}
+ 
+.lower .tr2{
+  background-color: #3AA5AC;
+}
+.lower .tr3{
+  background-color: #ECECEC;
+}
+ 
+.lower .tr4{
+  background-color: #34383F;
+}
+.lower{
+  transform: rotate(180deg);
+  bottom: 00px;
+  right: 00px;
+}
+
+
