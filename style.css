@@ -1,23 +1,95 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 body {
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mainbox {
-  height: 400px;
-  width: 400px;
-  background-color:#f7e4ed;
-  position: relative;
-  overflow: hidden;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
+    height: 400px;
+    width: 400px;
+    background-color: #f7e4ed;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upper {
+    height: 200px;
+    width: 400px;
+    background-color: #3aa5ac;
+    display: flex;
+
+    justify-content: center;
+    align-items: end;
+}
+
+.upperhalftop {
+    width: 300px;
+    height: 150px;
+    background-color: #34383f;
+    border-radius: 150px 150px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.upperhalfbottom {
+    width: 170px;
+    height: 85px;
+    background-color: #ececec;
+    border-radius: 0px 0px 170px 170px;
+    animation: uhb 3s linear infinite;
+}
+
+@keyframes uhb {
+    30% {
+        transform: rotate(-20deg);
+    }
+    60% {
+        transform: rotate(20deg);
+    }
+}
+.lower {
+    background-color: #ececec;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.lowerhalftop {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #34383f;
+    animation: circle 3s linear infinite;
+}
+@keyframes circle {
+    50% {
+        transform: translate(0px, 100px) scale(0);
+    }
+}
+.lowerhalfbottom {
+    width: 180px;
+    height: 90px;
+    background-color: #3aa5ac;
+    border-radius: 0px 0px 180px 180px;
+
+    animation: lhb 3s linear infinite;
+}
+
+@keyframes lhb {
+    50% {
+        transform: translate(0px, 100px) scale(0);
+    }
 }
