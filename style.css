@@ -14,10 +14,93 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#21252C;
   position: relative;
   overflow: hidden;
   display: flex; 
   justify-content: center;
   align-items: center;
+  
+}
+
+.bigcircle{
+  height: 400px;
+  width: 200px;
+  border-radius: 0px 200px 200px 0px;
+  background-color: #ECECEC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  position: absolute;
+  left: 0px;
+  animation: bgc 3s ease-in-out infinite;
+}
+@keyframes bgc{
+  50%{
+     transform: translate(-200px) ;
+     opacity: 0;
+  }
+}
+.uppercircle{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 17px solid #ECECEC;
+   animation: upc 3s ease-in-out infinite;
+}
+
+@keyframes upc{
+  50%{
+    transform:translate(0,-200px)  ;
+  }
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.bottombox{
+  height: 200px;
+  width: 200px;
+  background-color: #3AA5AC;
+  border-radius: 100px 100px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ .upperbox,.middlebox,.bottombox1{
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+ }
+.dot{
+  height: 35px;
+  width: 35px;
+  background-color: #21252C;
+  border-radius: 50%;
+}
+.patch{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  position: absolute;
+  left: 240px;
+  top: 240px;
+  animation: patch 3s ease-in-out infinite;
+}
+
+@keyframes patch{
+  50%{
+    transform: rotate(360deg);
+  }
 }
