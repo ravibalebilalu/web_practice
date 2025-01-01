@@ -14,10 +14,100 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#34383F;
   position: relative;
   overflow: hidden;
   display: flex; 
   justify-content: center;
   align-items: center;
 }
+
+.bigcircle{
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-color: #ECECEC;
+  display: flex;
+   gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.flex_div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+ .blackcircle{
+  height: 50px;
+  width: 50px;
+  background-color: #21252C;
+  border-radius: 50%;
+ }
+.middle{
+  margin-top: 20px;
+  z-index: 100;
+  position: relative;
+}
+.left{
+  z-index: 99;
+}
+ .diamond{
+  height: 60px;
+  width: 60px;
+  background-color: #3AA5AC;
+  transform: rotate(45deg);
+  margin: 10px;
+  animation: diomond 4s ease-in-out infinite;
+ }
+
+ @keyframes diomond{
+  50%{
+ 
+    transform: rotate(380deg) scale(0);
+    border-radius: 50%;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+  }
+ }
+
+
+ .lbc1{
+  animation: lbc1 4s ease-in-out infinite;
+ }
+
+ @keyframes lbc1{
+  50%{
+    transform: translate(172px,70px);
+  }
+ }
+ .lbc2{
+  animation: lbc2 4s ease-in-out infinite;
+ }
+
+ @keyframes lbc2{
+  50%{
+    transform: translate(172px,-70px);
+  }
+ }
+ .lbc3{
+  animation: lbc3 4s ease-in-out infinite;
+ }
+
+ @keyframes lbc3{
+  50%{
+    transform: translate(-172px,70px);
+  }
+ }
+
+ .lbc4{
+  animation: lbc4 4s ease-in-out infinite;
+ }
+
+ @keyframes lbc4{
+  50%{
+    transform: translate(-172px,-70px);
+  }
+ }
