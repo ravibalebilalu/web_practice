@@ -14,10 +14,83 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#ECECEC;
   position: relative;
   overflow: hidden;
   display: flex; 
   justify-content: center;
   align-items: center;
+}
+.circle1{
+  height: 800px;
+  width: 800px;
+  border-radius: 50%;
+  border:  1px solid #21252C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: -400px;
+  animation: circle 4s ease-in-out infinite;
+}
+@keyframes circle{
+  50%{
+    transform: scale(0);
+  }
+}
+.circle2{
+  height: 700px;
+  width: 700px;
+  border-radius: 50%;
+  border:  1px solid #21252C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.circle3{
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+   background-color: #21252C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.circle4{
+  height: 470px;
+  width: 470px;
+  border-radius: 50%;
+   background-color:  #3AA5AC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: circle4 4s ease-in-out infinite;
+}
+
+@keyframes circle4{
+  50%{
+    opacity: 0;
+  }
+}
+.circle5{
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-color: #21252C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.circle6{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #3AA5AC;
+  
+ 
+  
 }
