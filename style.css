@@ -14,10 +14,76 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#3AA5AC;
   position: relative;
   overflow: hidden;
   display: flex; 
   justify-content: center;
   align-items: center;
+}
+.maincircle{
+  height: 397px;
+  width: 397px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgb(100, 75, 75);
+  display: flex;
+ flex-direction: column;
+  position:absolute;
+  top:0px;
+  animation: main 4s linear infinite;
+}
+
+@keyframes main{
+  0%{
+    transform: rotate(360deg);
+  }
+}
+
+.upper,.lower{
+  display: flex;
+}
+.box{
+  height: 200px;
+  width: 200px;
+
+}
+.box2c{
+  background-color: #21252C;
+}
+.box2f{
+  background-color: #34383F;
+}
+
+.center{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #ECECEC;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #3AA5AC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: inner 4s linear infinite;
+}
+@keyframes inner{
+  0%{
+    transform: scale(0) ;
+    height: 0px;
+  }
+}
+.seed{
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: #21252C;
 }
