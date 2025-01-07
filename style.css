@@ -14,10 +14,53 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#11638C;
   position: relative;
   overflow: hidden;
   display: flex; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.upper{
+  height: 200px;
+  width: 400px;
+  background-color: #40AFDB;
+  border-radius: 300px 0px 0px 0px;
+}
+
+.lower{
+  height: 200px;
+  width: 400px;
+  background-color: #FF9A8D;
+  border-radius:  0px 300px 0px 0px;
+}
+
+.circle{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  position: absolute;
+}
+.c1{
+  right: 50px;
+  top: 50px;
+  animation: c1 4s linear infinite;
+}
+@keyframes c1{
+  0%{
+    transform: translate(-202px,202px) scale(0);
+  }
+}
+.c2{
+  right: 250px;
+  top: 250px;
+  animation: c2 4s linear infinite;
+}
+@keyframes c2{
+  0%{
+    transform: translate(202px,-202px) scale(0);
+  }
 }
