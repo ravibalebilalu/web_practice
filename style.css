@@ -21,3 +21,70 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.background{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+.box{
+  height: 200px;
+  width: 200px;
+  animation: box 5s linear infinite;
+}
+
+@keyframes box{
+  50%{
+    opacity: 0.7;
+  }
+}
+.b1{
+  background-color: #11638C;
+}
+
+.b2{
+  background-color: #FF9A8D;
+}
+
+.b3{
+  background-color: #FF9A8D;
+}
+.b4{
+  background-color: #40AFDB;
+}
+
+.bigcircle{
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.smallcircle{
+  height: 225px;
+  width: 225px;
+  border-radius: 50%;
+  background-color: #11638C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seed{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  animation: seed 5s linear infinite;
+}
+@keyframes seed{
+  50%{
+    transform: scale(4);
+    opacity: 0.0;
+  }
+}
