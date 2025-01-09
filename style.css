@@ -21,3 +21,63 @@ body {
   justify-content: center;
   align-items: center;
 }
+.base{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+.triangle{
+  height: 400px;
+  width: 400px;
+  position: absolute;
+}
+.tr1{
+ 
+background-color: #11638C;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+ animation: tr1 4s linear infinite;
+}
+@keyframes tr1{
+  0%{
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+  }
+}
+
+
+.tr2{
+   
+background-color:#FF9A8D;
+clip-path: polygon(0 0, 0 100%, 100% 100%);
+animation: tr2 4s linear infinite;
+}
+
+@keyframes tr2{
+  0%{
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+  }
+}
+
+
+.circle1{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  animation: c1 4s linear infinite;
+}
+
+@keyframes c1{
+  0%{
+    transform: skewY(90deg) scale(0) ;
+  }
+}
+.circle2{
+height: 120px;
+width: 120px;
+border-radius: 50%;
+background-color: #40AFDB;
+}
