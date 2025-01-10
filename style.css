@@ -14,10 +14,45 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#11638C;
   position: relative;
   overflow: hidden;
   display: flex; 
   justify-content: center;
   align-items: center;
+}
+
+.semicircle{
+  height: 200px;
+  width: 400px;
+  border-radius: 0px 0px  180px 180px;
+  background-color: #40AFDB;
+  position: absolute;
+  bottom: 0px;
+}
+
+.bigcircle{
+  height: 260px;
+  width: 260px;
+  background-color: #FF9A8D;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: sc 5s linear infinite;
+}
+
+@keyframes sc{
+  0%{
+    transform: rotateX(360deg) skewX(30deg) scale(0) translate(200px,600px);
+
+  }
+}
+
+.smallcircle{
+  height: 120px;
+  width: 120px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
 }
