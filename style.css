@@ -14,10 +14,41 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#07080B;
   position: relative;
   overflow: hidden;
   display: flex; 
   justify-content: center;
   align-items: center;
+   
 }
+
+.bigcircle{
+  height: 200px;
+  width: 200px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 10px 10px 30px #FFFFFF, -20px -10px 50px #FFFFFF;
+}
+
+.bluecircle{
+   height: 130px;
+   width: 130px;
+   border-radius: 50%;
+   outline: 10px solid #50A6FF;
+   position: absolute;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-weight: 900;
+}
+ p{
+  color: #000040;
+  font-weight: 800;
+ }
+ 
