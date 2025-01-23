@@ -14,10 +14,63 @@ body {
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#1B1E6A;
   position: relative;
   overflow: hidden;
   display: flex; 
+   border-color:  #FEAE60 ;
+   border-style: solid;
+   border-width: 0px 0px 1px 1px;
   justify-content: center;
   align-items: center;
+  animation: mainbox 4s ease-in-out infinite;
 }
+
+@keyframes mainbox{
+  50%{
+     border-color: #1B1E6A;
+  }
+}
+
+.ball{
+  height: 47px;
+  width: 47px;
+  border-radius: 50%;
+  background:#FEAE60 ;
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  animation:  ball 4s ease-in-out infinite;
+}
+@keyframes ball{
+  50%{
+    transform: translate(-150px,140px);
+  }
+}
+
+.triangle{
+  height: 400px;
+  width: 400px;
+  background: #FEAE60;
+  clip-path: polygon(0 0%, 0% 100%, 100% 100%);
+  animation: triangle 4s ease-in-out infinite;
+}
+
+@keyframes triangle{
+  50%{
+    transform: rotateZ(360deg) scale(0.2);
+  }
+}
+
+.bar{
+  height: 550px;
+  width: 15px;
+  background: #1B1E6A;
+  position: absolute;
+  transform: rotate(135deg);
+  top: -40px;
+  left: 180px;
+  
+}
+
+ 
