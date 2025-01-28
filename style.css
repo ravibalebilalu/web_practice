@@ -49,6 +49,7 @@ body {
 }
 
 .c{
+  position: absolute;
   animation: c 5s ease-out infinite;
 }
 
