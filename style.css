@@ -6,18 +6,55 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color:#07080B;
+   
 }
 .mainbox {
   height: 400px;
   width: 400px;
-  background-color:#f7e4ed;
+  background-color:#FE686A;
   position: relative;
   overflow: hidden;
-  display: flex; 
+  
+}
+.flexbox{
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+.circle4{
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border:22px solid #0E85AE;
+  box-sizing: border-box;
+}
+.circle3{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border:22px solid #0E85AE;
+}
+.circle2{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border:22px solid #FEC539;
+}
+.circle1{
+  height: 105px;
+  width: 105px;
+  border-radius: 50%;
+  border:25px solid #173454;
+}
+
+.c{
+  animation: c 5s ease-out infinite;
+}
+
+@keyframes c{
+  0%{
+    transform: scale(0);
+    opacity: 0.5;
+  }
 }
