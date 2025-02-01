@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: #07080B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color: #2A4880;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.triangle1{
+    height: 400px;
+    width: 400px;
+    background-color: #FB9A4B;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.triangle2{
+    height: 200px;
+    width: 200px;
+    background-color: #1399ED;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    animation: tri1 5s linear infinite;
+}
+
+@keyframes tri1{
+    50%{
+         
+        transform:  translate(200px,-200px) rotateY(180deg);
+        opacity: 0;
+        background-color: #2A4880;
+    }
+}
