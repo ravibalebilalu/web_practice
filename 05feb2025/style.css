@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #384877;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color: #142A43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.coconut{
+    height: 250px;
+    width: 250px;
+    border-radius:  50% 50% 0% 50%;
+    background-color: #F9AEA0;
+}
+.grill{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    transform: rotate(135deg);
+    animation: grill 2s ease-in-out infinite;
+}
+
+@keyframes grill {
+    0%{
+         
+        gap: 0px;
+        opacity: 0;
+         
+    }
+    50%{
+         
+        gap: 10px;
+    }
+    75%{
+         
+        gap: 20px;
+    }
+    100%{
+         
+        gap: 30px;
+    }
+}
+
+.bar{
+    height: 6px;
+    width: 270px;
+    background-color:#FFFFFF ;
+}
