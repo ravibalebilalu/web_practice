@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #1a1b1d;
+}
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainbox {
+    height: 400px;
+    width: 400px;
+    background-color: #07080b;
+    overflow: hidden;
+    position: relative;
+}
+.circle1 {
+    height: 800px;
+    width: 800px;
+    border-radius: 800px;
+    background-color: #7bc7a9;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.hex1 {
+    height: 275px;
+    width: 275px;
+    background-color: #142a43;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    animation: hex1 4s ease-in-out infinite;
+}
+
+@keyframes hex1{
+    50%{
+        transform: rotateZ(180deg);
+    }
+}
+.hex2 {
+    height: 175px;
+    width: 175px;
+    background-color: #e6e3dc;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    animation: hex2 4s ease-in-out infinite;
+}
+
+@keyframes hex2{
+    50%{
+        transform: rotateX(180deg) scale(.5);
+    }
+}
+
+.circle2 {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: #142a43;
+}
