@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #2d3038 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color:  #07080B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.tunnel{
+    height: 400px;
+    width: 400px;
+    background-color: #0D2741;
+    border-radius: 200px 200px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pcircle{
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    border:  60px solid #F9AEA0;
+}
+.bar{
+    height: 250px;
+    width: 40px;
+    background-color:#E6E3DC ;
+    position: absolute;
+    animation: bar 4s ease-in-out infinite;
+}
+
+@keyframes bar{
+    50%{
+        transform: rotate(360deg) scale(.4);
+    }
+}
