@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #2e323f ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color:  #07080B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.triangle{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    animation: tr 4s ease-out infinite;
+}
+
+@keyframes tr{
+    50%{
+        transform: rotateY(360deg) rotateX(45deg);
+    }
+}
+.t1{
+    background-color: #7BC7A9;
+    clip-path: polygon(50% 50%, 0 0, 100% 0);
+}
+.t2{
+    background-color:  #7BC7A9;
+    clip-path: polygon(50% 50%, 100% 100%, 100% 0);
+    top: -1px;
+    left: -1px;
+}
+
+.t3{
+    background-color: #07080B;
+    clip-path: polygon(48% 45%, 0% 100%, 100% 100%);
+    top: 18px;
+    left: 6px;
+}
+
+.t4{
+    background-color: #142A43;
+    clip-path: polygon(50% 50%, 0 0, 0 100%);
+    top:0px;
+    left: 0px;
+}
+.box{
+    height: 80px;
+    width: 250px;
+    border: 7px solid #FFFFFF;
+    position: absolute;
+    top: 120px;
+    animation: box 4s ease-in infinite;
+}
+
+@keyframes box{
+    50%{
+        transform: translate(0px,300px);
+        opacity: 0;
+    }
+}
