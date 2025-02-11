@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #2d3344;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color: #07080B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.pcb{
+    height: 800px;
+    width: 800px;
+    border-radius: 50%;
+    background-color:#F9AEA0 ;
+    position: absolute;
+    top: 0px;
+  left: -400px;
+}
+
+.chasis{
+    height: 180px;
+    width: 180px;
+    background-color: #7BC7A9;
+    position: absolute;
+    right: 140px;
+    top: 150px;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chip{
+    height: 95px;
+    width: 95px;
+    background-color:#0D2741 ;
+    z-index: 100;
+    animation: chip 1s linear infinite;
+   
+}
+@keyframes chip{
+    50%{
+        box-shadow: 3px 3px 10px #0D2741 ,-3px -3px 10px #0D2741;
+        transform: scale(.95);
+        border-radius: 5px;
+    }
+}
+
+.pins{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 99;
+}
+
+.pin{
+    height: 7px;
+    width: 260px;
+    background-color: #FFFFFF;
+}
